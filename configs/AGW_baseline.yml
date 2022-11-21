@@ -1,0 +1,71 @@
+MODEL:
+  PRETRAIN_CHOICE: "imagenet"
+  PRETRAIN_PATH: "/home/shenwei/pretrained/resnet50-19c8e357.pth"
+  PRETRAIN_DIR: "./log/market1501/GCR-noise-5-1" # for the trained weight for testing
+  CENTER_LOSS: "on"
+  CENTER_FEAT_DIM: 2048
+  NAME: "resnet50_nl"
+  WEIGHT_REGULARIZED_TRIPLET: "on"
+  GENERALIZED_MEAN_POOL: "on"
+  MODE: "GCR" # C for common AGW
+  OUTPUT_MODE: "both"
+  EPOCH: "best"
+  VAL_R1: 0.75 # epsilon r1
+  PSNR: 1.0 # epsilon psnr
+  SSIM: 0.05 # epsilon ssim
+  DEVICE_ID: "'0'"
+
+INPUT:
+  IMG_SIZE: [256, 128]
+  PROB: 0.5 # random horizontal flip
+  RE_PROB: 0.5 # random erasing
+  PADDING: 10
+  DIRECTION: "AtoB"
+  TYPE: "noise" # noise, blur, mosaic
+  RADIUS: 0.5 # 0.5 for noise, 12.0 for blur, 24.0 for mosaic
+  PIXEL_MEAN: [0.485, 0.456, 0.406] # [0.485, 0.456, 0.406] # [0.5, 0.5, 0.5]
+  PIXEL_STD: [0.5, 0.5, 0.5] # [0.229, 0.224, 0.225]
+
+DATASETS:
+  NAMES: ('market1501') # market1501/market1501_val/cuhk03/cuhk03_val/msmt17/msmt17_val
+  ROOT_DIR: ('/data/sw_data')
+
+DATALOADER:
+  PK_SAMPLER: "on"
+  NUM_INSTANCE: 4
+  NUM_WORKERS: 8
+
+SOLVER:
+  OPTIMIZER_NAME: "Adam"
+  MAX_EPOCHS: 120
+  BASE_LR: 0.00035
+
+  CENTER_LR: 0.5
+  CENTER_LOSS_WEIGHT: 0.0005
+
+  WEIGHT_DECAY: 0.0005
+  IMS_PER_BATCH: 80
+
+  STEPS: [40, 80]
+  GAMMA: 0.1
+
+  WARMUP_FACTOR: 0.01
+  WARMUP_ITERS: 10
+  WARMUP_METHOD: "linear"
+
+  CHECKPOINT_PERIOD: 60
+  LOG_PERIOD: 20
+  EVAL_PERIOD: 10
+  VAL_PERIOD: 5
+
+TEST:
+  IMS_PER_BATCH: 128
+  RE_RANKING: "off"
+  WEIGHT: "path"
+  FEAT_NORM: "on"
+  EVALUATE_ONLY: "off" # on for test
+  PARTIAL_REID: "off"
+  GALLERY_MODE: "both" # origin/protected/both
+  QUERY_MODE: "origin" # origin/protected/both
+
+OUTPUT_DIR: "./log/market1501/GCR-noise-5-1"
