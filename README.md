@@ -220,5 +220,5 @@ Please kindly cite this paper in your publications if it helps your research:
 }
 ```
 
-Contact: [w.shen.contact@whu.edu.cn](mailto:w.shen.contact@whu.edu.cn)
+Contact: [weishen@whu.edu.cn](mailto:w.shen.contact@whu.edu.cn)
 
