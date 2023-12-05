@@ -214,7 +214,7 @@ Please kindly cite this paper in your publications if it helps your research:
 ```
 @article{22securereid,
   title={SecureReID: Privacy-Preserving Anonymization for Person Re-Identification},
-  author={Mang, Ye and Wei, Shen and Ying, Li and Bo, Du},
+  author={Mang Ye, Wei Shen, Junwu Zhang, Yao Yang, Bo Du},
   journal={},
   year={2023},
 }
