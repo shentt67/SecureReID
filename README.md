@@ -10,7 +10,7 @@
 
 > [SecureReID: Privacy-Preserving Anonymization for Person Re-Identification](baidu.com)
 >
-> Mang Ye, Wei Shen, Ying Li, Bo Du
+> Mang Ye, Wei Shen, Junwu Zhang, Yao Yang, Bo Du
 >
 > Wuhan University
 >
