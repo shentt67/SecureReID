@@ -2,23 +2,25 @@
 
 
 
-# SecureReID: Privacy-Preserving Anonymization for Person Re-Identification
+# SecureReID: Privacy-Preserving Anonymization for Person Re-Identification (TIFS 2024)
 
-**The official pytorch implementation of "SecureReID: Privacy-Preserving Anonymization for Person Re-Identification".**
+**The official pytorch implementation of "SecureReID: Privacy-Preserving Anonymization for Person Re-Identification" (TIFS 2024).**
 
 ![](./pics/framework.svg)
 
-> [SecureReID: Privacy-Preserving Anonymization for Person Re-Identification](baidu.com)
+> [SecureReID: Privacy-Preserving Anonymization for Person Re-Identification](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=10206 )
 >
 > Mang Ye, Wei Shen, Junwu Zhang, Yao Yang, Bo Du
 >
 > Wuhan University
 >
-> **Abstract** Anonymization methods have become widely used for privacy protection. However, traditional anonymization solutions invariably suffer from semantic information loss, resulting in limited data utilities. Furthermore, even after retaining various identity-irrelevant utilities, existing deep learning-based anonymization strategies may alter the identity of pedestrian, rendering them unsuitable for re-identification (Re-ID) tasks. To explore the privacy-utility trade-off for pedestrian images, we propose a joint learning reversible anonymization framework that can reversibly generate full-body anonymized images with little performance drop on Re-ID tasks. Besides, we design a progressive training strategy that progressively enhances the anonymization supervision to improve the performance. After discussing the potential privacy risks of anonymization methods, we further develop an identity-specific encrypt-decrypt (ISED) architecture for enhanced security, which cannot be recovered by unauthorized attackers. Our experiments demonstrate that the ISED architecture is effective, and our privacy-protecting anonymization framework can guarantee person re-identification performance while protecting pedestrian subject privacy.
+> **Abstract** Anonymization methods have gained widespread use in safeguarding privacy. However, conventional anonymization solutions inevitably lead to the loss of semantic information, resulting in limited data utility. Besides, existing deep learning-based anonymization strategies inadvertently alter the identities of pedestrians, rendering them unsuitable for re-identification (Re-ID) tasks. Beyond these limitations, we propose a joint learning reversible anonymization framework that can reversibly generate full-body anonymized images with little performance drop on Re-ID tasks. Despite these advancements, we reveal that the anonymization methods are vulnerable to model attacks, where attackers can utilize the anonymization model and public data to perform recovery and Re-ID tasks on anonymized images. To defend against the potential attack, we introduce the identity-specific encrypt-decrypt (ISED) architecture for enhanced security, where the anonymized images are encrypted using the specific key for each identity. It renders the images computationally inaccessible to attackers while allowing for seamless reversal without loss using the corresponding keys. Extensive experiments demonstrate that the anonymization framework can guarantee Re-ID performance while protecting pedestrian privacy. In addition, we provide both empirical and theoretical evidence to demonstrate the feasibility of model attacks and the effectiveness of our ISED strategy.
 
 
 
 ## Last Update
+
+**2024/01/30** Accepted by IEEE Transactions on Information Forensics and Security in 2024 (TIFS 2024). 
 
 **2022/11/21** We have released the official codes.
 
@@ -209,16 +211,24 @@ The detailed results can be found in the main [paper](https://doi.org/10.1145/35
 
 ## Citation
 
-Please kindly cite this paper in your publications if it helps your research:
+Please cite our work in your publications if it helps your research:
 
 ```
-@article{22securereid,
+@article{ye2024securereid,
   title={SecureReID: Privacy-Preserving Anonymization for Person Re-Identification},
-  author={Mang Ye, Wei Shen, Junwu Zhang, Yao Yang, Bo Du},
-  journal={},
-  year={2023},
+  author={Ye, Mang and Shen, Wei and Zhang, Junwu and Yang, Yao and Du, Bo},
+  journal={IEEE Transactions on Information Forensics and Security},
+  year={2024},
+  publisher={IEEE}
+}
+@inproceedings{zhang2022learnable,
+  title={Learnable privacy-preserving anonymization for pedestrian images},
+  author={Zhang, Junwu and Ye, Mang and Yang, Yao},
+  booktitle={Proceedings of the 30th ACM International Conference on Multimedia},
+  pages={7300--7308},
+  year={2022}
 }
 ```
 
-Contact: [weishen@whu.edu.cn](mailto:w.shen.contact@whu.edu.cn)
+Contact: [yemang@whu.edu.cn](mailto:yemang@whu.edu.cn), [weishen@whu.edu.cn](mailto:weishen@whu.edu.cn)
 
