@@ -8,7 +8,7 @@
 
 ![](./pics/framework.svg)
 
-> [SecureReID: Privacy-Preserving Anonymization for Person Re-Identification](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=10206 )
+> [SecureReID: Privacy-Preserving Anonymization for Person Re-Identification](https://ieeexplore.ieee.org/abstract/document/10409614/ )
 >
 > Mang Ye, Wei Shen, Junwu Zhang, Yao Yang, Bo Du
 >
