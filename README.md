@@ -169,8 +169,6 @@ python3 tools/main.py --config_file='configs/AGW_baseline.yml' DATASETS.ROOT_DIR
 
 Pretrained models will be published later.
 
-The detailed results can be found in the main [paper](https://doi.org/10.1145/3503161.3548766) and the results of widely used non-protective Re-ID model AGW can be found [here](https://github.com/mangye16/ReID-Survey).
-
 
 
 - **Qualitative Results**
