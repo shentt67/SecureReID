@@ -2,7 +2,7 @@
 
 
 
-# SecureReID: Privacy-Preserving Anonymization for Person Re-Identification (TIFS 2024)
+# SecureReID: Privacy-Preserving Anonymization for Person Re-Identification
 
 **The official pytorch implementation of "SecureReID: Privacy-Preserving Anonymization for Person Re-Identification" (TIFS 2024).**
 
