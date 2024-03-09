@@ -212,19 +212,18 @@ Pretrained models will be published later.
 Please cite our work in your publications if it helps your research:
 
 ```
-@article{ye2024securereid,
-  title={SecureReID: Privacy-Preserving Anonymization for Person Re-Identification},
-  author={Ye, Mang and Shen, Wei and Zhang, Junwu and Yang, Yao and Du, Bo},
-  journal={IEEE Transactions on Information Forensics and Security},
-  year={2024},
-  publisher={IEEE}
-}
 @inproceedings{zhang2022learnable,
   title={Learnable privacy-preserving anonymization for pedestrian images},
   author={Zhang, Junwu and Ye, Mang and Yang, Yao},
   booktitle={Proceedings of the 30th ACM International Conference on Multimedia},
   pages={7300--7308},
   year={2022}
+}
+@article{ye2024securereid,
+  title={SecureReID: Privacy-Preserving Anonymization for Person Re-Identification},
+  author={Ye, Mang and Shen, Wei and Zhang, Junwu and Yang, Yao and Du, Bo},
+  journal={IEEE Transactions on Information Forensics and Security},
+  year={2024}
 }
 ```
 
